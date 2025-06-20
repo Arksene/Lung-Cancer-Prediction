@@ -399,7 +399,8 @@ export default function PredictForm() {
                   {/* Pertanyaan scale: Energi */}
                   <div className="bg-gradient-to-r from-green-100 to-green-50 border-green-300 p-4 rounded-xl border-2 shadow-md flex flex-col gap-2 mt-6">
                     <label className="block text-base font-semibold text-gray-800 mb-2">
-                      Bagaimana tingkat energi Anda? (1 - 100 semakin kecil artinya semakin mudah lelah)
+                      Bagaimana tingkat energi Anda? (Semakin Kecil Artinya
+                      Semakin Mudah Lelah)
                     </label>
                     <input
                       type="range"
