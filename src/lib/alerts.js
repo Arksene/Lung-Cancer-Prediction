@@ -10,11 +10,3 @@ export const confirmAlert = async (message) => {
     denyButtonText: "Tidak",
   });
 };
-
-export const alertSuccess = async (message) => {
-  return Swal.fire({
-    icon: "success",
-    title: "Berhasil",
-    text: message,
-  });
-};
