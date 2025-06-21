@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Stepper from "../components/stepper";
 import { Client } from "@gradio/client";
+import { confirmAlert, alertSuccess } from "../lib/alerts";
 
 export default function PredictForm() {
   const [gender, setGender] = useState("Male");
@@ -77,7 +78,7 @@ export default function PredictForm() {
   // Fungsi submit step 2, sambungkan ke API Gradio
   const handleSubmitStep2 = async (e) => {
     e.preventDefault();
-    const confirm = window.confirm("Are you sure the data entered is correct?");
+    const confirm = confirmAlert("Are you sure the data entered is correct?");
     if (confirm) {
       const formData = convertToPredictionFormat();
 
