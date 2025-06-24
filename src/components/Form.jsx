@@ -517,12 +517,158 @@ export default function PredictForm() {
                   {predictionResult.risk_status}
                 </span>
               </div>
-              <div className="mb-4">
-                <span className="font-semibold">Model Used: </span>
-                <span className="text-gray-700">
-                  {predictionResult.model_used}
-                </span>
+
+              {/* Tampilkan ringkasan input user */}
+              <div className="mb-4 mt-6 text-left shadow-md p-4 bg-gradient-to-t from-green-300 to-emerald-200 rounded-lg">
+                <h3 className="font-bold text-base mb-2 text-gray-800">
+                  Ringkasan Data Anda:
+                </h3>
+                <table className="w-full text-sm border rounded-lg overflow-hidden">
+                  <tbody>
+                    <tr>
+                      <td className="py-1 pr-2 text-gray-700">Jenis Kelamin</td>
+                      <td className="py-1">
+                        {predictionResult.data.gender === "Male"
+                          ? "Laki-laki"
+                          : "Perempuan"}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-1 pr-2 text-gray-600">Usia</td>
+                      <td className="py-1">
+                        {predictionResult.data.age} tahun
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-1 pr-2 text-gray-600">Merokok</td>
+                      <td className="py-1">
+                        {predictionResult.data.smoking ? "Ya" : "Tidak"}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-1 pr-2 text-gray-600">
+                        Jari menguning
+                      </td>
+                      <td className="py-1">
+                        {predictionResult.data.finger_discoloration
+                          ? "Ya"
+                          : "Tidak"}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-1 pr-2 text-gray-600">Stres mental</td>
+                      <td className="py-1">
+                        {predictionResult.data.mental_stress ? "Ya" : "Tidak"}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-1 pr-2 text-gray-600">
+                        Paparan polusi
+                      </td>
+                      <td className="py-1">
+                        {predictionResult.data.exposure_to_pollution
+                          ? "Ya"
+                          : "Tidak"}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-1 pr-2 text-gray-600">
+                        Penyakit jangka panjang
+                      </td>
+                      <td className="py-1">
+                        {predictionResult.data.long_term_illness
+                          ? "Ya"
+                          : "Tidak"}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-1 pr-2 text-gray-600">
+                        Tingkat energi
+                      </td>
+                      <td className="py-1">
+                        {predictionResult.data.energy_level}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-1 pr-2 text-gray-600">
+                        Kelemahan imun
+                      </td>
+                      <td className="py-1">
+                        {predictionResult.data.immune_weakness ? "Ya" : "Tidak"}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-1 pr-2 text-gray-600">
+                        Masalah pernapasan
+                      </td>
+                      <td className="py-1">
+                        {predictionResult.data.breathing_issue ? "Ya" : "Tidak"}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-1 pr-2 text-gray-600">
+                        Konsumsi alkohol
+                      </td>
+                      <td className="py-1">
+                        {predictionResult.data.alcohol_consumption
+                          ? "Ya"
+                          : "Tidak"}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-1 pr-2 text-gray-600">
+                        Gangguan tenggorokan
+                      </td>
+                      <td className="py-1">
+                        {predictionResult.data.throat_discomfort
+                          ? "Ya"
+                          : "Tidak"}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-1 pr-2 text-gray-600">
+                        Saturasi oksigen
+                      </td>
+                      <td className="py-1">
+                        {predictionResult.data.oxygen_saturation}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-1 pr-2 text-gray-600">Sesak dada</td>
+                      <td className="py-1">
+                        {predictionResult.data.chest_tightness ? "Ya" : "Tidak"}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-1 pr-2 text-gray-600">
+                        Riwayat keluarga kanker paru
+                      </td>
+                      <td className="py-1">
+                        {predictionResult.data.family_history ? "Ya" : "Tidak"}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-1 pr-2 text-gray-600">
+                        Keluarga merokok
+                      </td>
+                      <td className="py-1">
+                        {predictionResult.data.smoking_family_history
+                          ? "Ya"
+                          : "Tidak"}
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className="py-1 pr-2 text-gray-600">
+                        Stres pengaruhi imun
+                      </td>
+                      <td className="py-1">
+                        {predictionResult.data.stress_immune ? "Ya" : "Tidak"}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
+
               <button
                 className="bg-[#00B7E0] hover:bg-[#0099CC] text-white px-6 py-2 rounded-lg font-semibold text-sm mt-2"
                 onClick={handleReset}
