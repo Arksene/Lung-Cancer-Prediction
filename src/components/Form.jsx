@@ -555,7 +555,7 @@ export default function PredictForm() {
                       </td>
                     </tr>
                     <tr>
-                      <td className="py-1 pr-2 text-gray-600">Stres mental</td>
+                      <td className="py-1 pr-2 text-gray-600">Sering Stres</td>
                       <td className="py-1">
                         {predictionResult.data.mental_stress ? "Ya" : "Tidak"}
                       </td>
