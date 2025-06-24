@@ -425,8 +425,7 @@ export default function PredictForm() {
                   {/* Pertanyaan scale: Saturasi Oksigen */}
                   <div className="bg-gradient-to-r from-blue-100 to-blue-50 border-blue-300 p-4 rounded-xl border-2 shadow-md flex flex-col gap-2 mt-6">
                     <label className="block text-base font-semibold text-gray-800 mb-2">
-                      Bagaimana tingkat saturasi oksigen Anda? (kurang dari 90
-                      Berbahaya)
+                      Bagaimana tingkat saturasi oksigen Anda?
                     </label>
                     <input
                       type="range"
