@@ -299,7 +299,7 @@ export default function PredictForm() {
                         color: "from-yellow-100 to-yellow-50 border-yellow-300",
                       },
                       {
-                        label: "Apakah Anda sering mengalami stres mental?",
+                        label: "Apakah Anda sering mengalami stres?",
                         state: anxiety,
                         setState: setAnxiety,
                         color: "from-orange-100 to-orange-50 border-orange-300",
