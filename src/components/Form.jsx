@@ -581,7 +581,7 @@ export default function PredictForm() {
                     </tr>
                     <tr>
                       <td className="py-1 pr-2 text-gray-600">
-                        Tingkat energi
+                        Tingkat mudah lelah
                       </td>
                       <td className="py-1">
                         {predictionResult.data.energy_level}
