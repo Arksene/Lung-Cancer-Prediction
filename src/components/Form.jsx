@@ -517,7 +517,7 @@ export default function PredictForm() {
               </div>
 
               {/* Tampilkan ringkasan input user */}
-              <div className="mb-4 mt-6 text-left shadow-md p-4 bg-gradient-to-t from-green-300 to-emerald-200 rounded-lg">
+              <div className="mb-4 mt-6 text-left shadow-md p-2 bg-gradient-to-t from-green-300 to-emerald-200 rounded-lg md:p-4">
                 <h3 className="font-bold text-base mb-2 text-gray-800">
                   Ringkasan Data Anda:
                 </h3>
