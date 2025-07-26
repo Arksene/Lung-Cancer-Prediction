@@ -76,7 +76,6 @@ export default function PredictForm() {
     setCurrentStep(1);
   };
 
-  // Fungsi submit step 2, sambungkan ke API Gradio
   const handleSubmitStep2 = async (e) => {
     e.preventDefault();
     const confirm = await confirmAlert(
